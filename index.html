@@ -1,0 +1,11 @@
+<html>
+<body style="margin: 40px auto;background-color: #3c3c3c; max-width: 304px;">
+<script>
+function refresh() {
+document.getElementById("tab").style.opacity = '1';
+setTimeout(function(){ document.getElementById("tab").style.opacity = '0'; setTimeout(function(){ window.location.reload(); }, 3000) }, 3000 );
+}
+</script>
+<iframe id="tab" src="http://www.tabforacause.org/newtab/#_=_" style="height:90px; border:none; opacity:0; transition: opacity 2s ease-in-out;" onload="refresh()"></iframe>
+</body>
+</html>
